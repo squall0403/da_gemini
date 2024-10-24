@@ -1,0 +1,24 @@
+black
+flake8
+isort
+loguru
+mkdocs
+pip
+python-dotenv
+tqdm
+typer
+-e .
+langchain
+langchain-community
+langchain-openai
+langchain-experimental
+streamlit
+pandas
+matplotlib
+seaborn
+pygwalker
+jupyterlab
+tiktoken
+tabulate
+python-dotenv
+langchain-google-genai
