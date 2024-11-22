@@ -11,7 +11,7 @@ def load_llm():
     genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
     return ChatGoogleGenerativeAI(
         name='Gemini',
-        model="gemini-1.5-flash",
+        model="gemini-1.5-pro",
         temperature=0,
         max_tokens=None,
         timeout=None,

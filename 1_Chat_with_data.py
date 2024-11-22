@@ -10,7 +10,7 @@ from src.ultis import execute_plt_code
 load_dotenv()
 
 def process_query(da_agent, query):
-    response = da_agent(query)
+    response = da_agent.invoke({"input": query})
 
     # 4. Display the answer to the user
     st.write("Answer:" + "\n")
