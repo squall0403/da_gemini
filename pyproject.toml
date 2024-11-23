@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "da_gemini"
 version = "0.0.1"
-description = "A short description of the project."
+description = "An AI data Analysis tool with Gemini"
 authors = [
   { name = "DuyNXA" },
 ]

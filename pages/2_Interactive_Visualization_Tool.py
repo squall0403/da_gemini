@@ -10,8 +10,13 @@ def main():
     )
 
     st.header("📈 Interactive Visualization Tool")
-    st.write("### Welcome to interactive visualization tool. Please enjoy !")
-
+    st.caption("### This tool help you visialize your data.")
+    with st.sidebar:
+        st.html("""
+                <div>
+                Developed by <span style="color:blue">DXA</span>
+                </div>
+                """)
     # Render pygwalker
     if st.session_state.get("df") is not None:
         pyg_app = StreamlitRenderer(st.session_state.df)

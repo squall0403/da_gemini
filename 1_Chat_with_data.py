@@ -32,15 +32,20 @@ def process_query(da_agent, query):
 def main():
     # 1. Set up the app layout
     # Set up streamlit interface
-    st.set_page_config(page_title="Smart Data Analysis Tool", page_icon="📊", layout="centered")
-    st.header("📊 Smart Data Analysis Tool")
-    st.write(
-        "### This tools can assist your daily data analysis tasks."
+    st.set_page_config(page_title="AI Data Analysis Tool", page_icon="📊", layout="centered")
+    st.header("📊 AI Data Analysis Tool")
+    st.caption(
+        "### This uses AI to assist your daily data analysis tasks."
     )
 
     # Allow the user to upload a CSV file
     with st.sidebar:
         uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+        st.html("""
+                <div>
+                Developed by <span style="color:blue">DXA</span>
+                </div>
+                """)
 
      # Load llms model
     llm = load_llm() 
